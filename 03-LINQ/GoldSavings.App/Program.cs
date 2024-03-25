@@ -42,10 +42,31 @@ class Program
         // goldClient.WhenIsTheBestTime();
 
         // TASK 8
-        goldClient.SavePricesToXML();
+        // goldClient.SavePricesToXML();
 
         // TASK 9
-        goldClient.ReadPricesFromXML();
+        //goldClient.ReadPricesFromXML();
+
+        // Func<int, bool> isLeapYear = year => (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+        // int yearToCheck = 2024;
+        // Console.WriteLine($"{yearToCheck} is a leap year: {isLeapYear(yearToCheck)}");
+        // yearToCheck = 2000;
+        // Console.WriteLine($"{yearToCheck} is a leap year: {isLeapYear(yearToCheck)}");
+        // yearToCheck = 2017;
+        // Console.WriteLine($"{yearToCheck} is a leap year: {isLeapYear(yearToCheck)}");
+
+        RandomizedList<int> randomList = new RandomizedList<int>();
+
+        randomList.Add(10);
+        randomList.Add(20);
+        randomList.Add(30);
+        randomList.Add(40);
+        randomList.Add(50);
+
+        Console.WriteLine($"Is empty: {randomList.IsEmpty}");
+
+        Console.WriteLine($"Random element: {randomList.Get(0)}");
+        Console.WriteLine($"Random element: {randomList.Get(1)}");
     }   
 
 
